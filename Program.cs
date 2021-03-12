@@ -33,9 +33,14 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             SmackTalkingPlayer person = new SmackTalkingPlayer();
-            person.Name = "person";
+            person.Name = "Person";
             person.Taunt = "this are mean words";
             person.Play(player2);
+
+            Console.WriteLine("-------------------");
+            OneHigherPlayer winner = new OneHigherPlayer();
+            winner.Name = "Winner";
+            winner.Play(player1);
 
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large
