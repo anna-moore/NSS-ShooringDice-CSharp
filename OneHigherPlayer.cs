@@ -3,7 +3,7 @@ namespace ShootingDice
 {
     // TODO: Complete this class
 
-    // A Player who always roles one higher than the other player
+    // Overrride the play method to make A Player who always roles one higher than the other player
     public class OneHigherPlayer : Player
     {
         public override void Play(Player other)

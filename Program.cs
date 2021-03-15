@@ -46,6 +46,10 @@ namespace ShootingDice
                 player1, player2, player3, large
             };
 
+            Console.WriteLine("-------------------");
+            HumanPlayer human = new HumanPlayer();
+            human.Play(player3);
+
             PlayMany(players);
         }
 
