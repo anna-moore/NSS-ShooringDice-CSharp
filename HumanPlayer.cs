@@ -7,7 +7,6 @@ namespace ShootingDice
     //Next version if/then logic to prevent int outside of range
     public class HumanPlayer : Player
     {
-
         // Call roll for "this" object and for the "other" object
         public override void Play(Player other)
         {

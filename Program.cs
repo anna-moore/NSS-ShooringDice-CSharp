@@ -50,8 +50,15 @@ namespace ShootingDice
             HumanPlayer human = new HumanPlayer();
             human.Play(player3);
 
+            Console.WriteLine("-------------------");
+            CreativeSmackTalkingPlayer creative = new CreativeSmackTalkingPlayer();
+            creative.Name = "meanPerson";
+            creative.Play(player1);
+
+
             PlayMany(players);
         }
+
 
         static void PlayMany(List<Player> players)
         {
