@@ -42,9 +42,6 @@ namespace ShootingDice
             winner.Name = "Winner";
             winner.Play(player1);
 
-            List<Player> players = new List<Player>() {
-                player1, player2, player3, large
-            };
 
             Console.WriteLine("-------------------");
             HumanPlayer human = new HumanPlayer();
@@ -56,6 +53,19 @@ namespace ShootingDice
             creative.Play(player1);
 
 
+            Console.WriteLine("-------------------");
+            SoreLoserPlayer sore = new SoreLoserPlayer();
+            sore.Name = "Sore Loser Player";
+            sore.Play(player3);
+
+            Console.WriteLine("-------------------");
+            UpperHalfPlayer upper = new UpperHalfPlayer();
+            upper.Name = "Upper";
+            upper.Play(player3);
+
+            List<Player> players = new List<Player>() {
+                player1, player2, player3, large, winner, human, sore,upper
+            };
             PlayMany(players);
         }
 
