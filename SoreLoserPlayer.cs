@@ -24,8 +24,10 @@ namespace ShootingDice
                 //here is the place for expection
                 else if (myRoll < otherRoll)
                 {
-                    throw new InvalidOperationException("**an error**");
-                    // Console.WriteLine($"{other.Name} Wins!");
+                    Console.WriteLine($"{other.Name} Wins!");
+                    Console.WriteLine("\"NOOO! THIS IS RIGGED!\"");
+                    throw new Exception("sore loser");
+                    // throw new InvalidOperationException("**an error**");
                 }
                 else
                 {
